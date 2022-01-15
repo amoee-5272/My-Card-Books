@@ -57,14 +57,14 @@ function SingleCards(props) {
       hoverable
       style={cardStyle}
       title={<Paragraph
-                editable={{onChange: handleTitleEdit, triggerType: ["text"]}}
+                editable={{onChange: handleTitleEdit, triggerType: ["text"]}} 
                 style ={{display: "flex", justifyContent: "space-between", fontSize: "24px"}}>
           {cardInfo.front}
         </Paragraph>}
     >
       <div style={{ display: "flex", justifyContent: "space-between" }}>
       <Paragraph
-                editable={{onChange: handleDescriptionEdit, triggerType: ["text"]}}
+                editable={{onChange: handleDescriptionEdit, triggerType: ["text"]}} 
                 style ={{display: "flex", justifyContent: "space-between"}}>
           {cardInfo.back}
         </Paragraph>
