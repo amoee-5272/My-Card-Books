@@ -2,6 +2,11 @@ import express from 'express';
 import dotenv from 'dotenv-defaults';
 import mongoose from 'mongoose';
 import router from './backend/routes/index.js';
+import bodyParser from "body-parser";
+import path from "path";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 dotenv.config();
 const app = express();
 //init middleware
